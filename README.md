@@ -52,3 +52,33 @@ docker --version
 docker ps
 python3 --version
 
+---
+
+## ▶️ Comment lancer le projet
+
+### 1️⃣ Cloner le dépôt
+```bash
+git clone https://github.com/Hela691/saas-docker-ui.git
+cd saas-docker-ui
+
+### 2️⃣ Créer et activer un environnement virtuel Python
+python3 -m venv venv
+source venv/bin/activate
+
+### 3️⃣ Installer les dépendances
+pip install --upgrade pip
+pip install -r requirements.txt
+
+### 4️⃣ Vérifier que Docker est actif
+docker --version
+docker ps
+
+
+### 5️⃣ Lancer l’application Flask
+python app.py
+
+### 6️⃣ Accéder à l’interface web
+http://IP_DE_LA_VM:5000
+
+
+
